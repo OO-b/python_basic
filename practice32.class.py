@@ -34,6 +34,9 @@ class Unit:
         print("{0} 유닛이 생성 되었습니다.".format(self.name))
         print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
         
+        # 멤버변수
+        # : 클래스내에서 정의된 변수
+        
 marine1 = Unit("마린", 40, 5)
 marine2 = Unit("마린", 40, 5)
 tank = Unit("탱크", 140, 15)
@@ -41,3 +44,17 @@ tank = Unit("탱크", 140, 15)
 
 # 클래스로 부터 만들어 지는 것 = 객체
 # 마린과 탱크는 Unit 클래스의 인스턴스
+
+
+
+#레이스 : 공중유닛, 비행기. 클로킹 (상대방에게 보이지 않음)
+wraith1 = Unit("레이스", 80, 5)
+print("유닛이름 : {0}, 공격력 : {1}".format(wraith1.name, wraith1.damage))
+
+# 마인드 컨트롤 : 상대방 유닛을 내 것으로 만드는 것 (빼앗음)
+wraith2 = Unit("빼앗은레이스", 80, 5)
+wraith2.clocking = True  # 위에서 정의되지 않은 변수 - 외부에서 추가로 할당한 변수 ! 파이선에서는 외부에서 추가로 변수 써서 사용 가능
+                         # wraith2 에만 변수 추가된 것
+
+if wraith2.clocking == True:
+    print("{0}는 현재 클로킹 상태입니다.".format(wraith2.name))
