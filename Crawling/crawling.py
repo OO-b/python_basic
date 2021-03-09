@@ -18,7 +18,7 @@ try :
     options.add_argument("headless")   # 위에 두줄 브라우저 안켜지게 하는것 
 
     chrome_loc = "C:\chromedriver.exe" # chromeDriver.exe 설치 위치
-    url = "http://iplug.dasstech.com/login" # 크롤링할 사이트 주소
+    url = "크롤링할 사이트 주소" # 크롤링할 사이트 주소
 
 
     browser = webdriver.Chrome(chrome_loc, options=options)# "./chromedriver.exe"
