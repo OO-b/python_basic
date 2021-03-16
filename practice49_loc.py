@@ -1,3 +1,4 @@
+# inspect  모듈 /패키지 위치 확인 가능
 
 import inspect
 import random
